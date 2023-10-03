@@ -36,7 +36,7 @@ project_directory/
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/ecommerce-admin-api.git
+   git clone git@github.com:MuhmmadHamzaMustafa/InventoryApp.git
 
 
 python3 -m venv venv

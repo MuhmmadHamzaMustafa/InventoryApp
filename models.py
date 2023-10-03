@@ -24,7 +24,7 @@ class SaleModel(BaseModel):
     product_id: int
     quantity_sold: int
     sale_date: str
-    category_id: int # You may want to add this field if you have a category for each sale
+    category_id: int
 
 # Response Model for Revenue Analysis
 class RevenueComparisonResponseModel(BaseModel):
