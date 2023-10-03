@@ -1,0 +1,66 @@
+# E-commerce Admin Dashboard API
+
+## Table of Contents
+
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Running the API](#running-the-api)
+- [API Endpoints](#api-endpoints)
+
+## Project Structure
+
+The project has the following directory structure:
+
+project_directory/
+├── main.py
+├── models.py
+├── routers/
+│ ├── users.py
+│ ├── categories.py
+│ ├── products.py
+│ ├── sales.py
+│ └── inventory.py
+└── test.db
+
+
+- `main.py`: The main entry point of the FastAPI application.
+- `models.py`: Contains SQLAlchemy models for the database tables.
+- `routers/`: Contains router modules for different API endpoints.
+- `test.db`: SQLite database file (you can use a different database).
+
+
+
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/yourusername/ecommerce-admin-api.git
+
+
+python3 -m venv venv
+source venv/bin/activate
+pip install fastapi uvicorn SQLAlchemy
+
+API Endpoints
+Users
+GET /users/: List all users.
+GET /users/{user_id}/: Get details of a specific user by ID.
+Categories
+GET /categories/: List all categories.
+GET /categories/{category_id}/: Get details of a specific category by ID.
+Products
+GET /products/: List all products.
+GET /products/{product_id}/: Get details of a specific product by ID.
+Sales
+GET /sales/revenue/: Calculate revenue for a specific period and category.
+GET /sales/compare-revenue/: Compare revenue across different periods and categories.
+Inventory
+GET /inventory/: List current inventory status.
+POST /inventory/update/: Update inventory levels.
+
+fastapi==0.68.1
+uvicorn==0.15.0
+sqlalchemy==1.4.26
+pydantic==1.8.2
