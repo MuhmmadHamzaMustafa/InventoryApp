@@ -43,6 +43,9 @@ python3 -m venv venv
 source venv/bin/activate
 pip install fastapi uvicorn SQLAlchemy
 
+USE THIS COMMAND TO RUN:
+    uvicorn main:app --host 0.0.0.0 --port 9000 --reload
+
 API Endpoints
 Users
 GET /users/: List all users.
